@@ -33,7 +33,7 @@ var mymap = new google.maps.Map(document.getElementById('mymap'), {
 
 function getUVI() {
     $.ajax({
-        url: 'http://opendata.epa.gov.tw/ws/Data/UV/?format=json',
+        url: 'https://opendata.epa.gov.tw/ws/Data/UV/?format=json',
         dataType: 'jsonp',
         success: onsuccessUVI,
         error: function() { console.log(error); },
@@ -43,7 +43,7 @@ function getUVI() {
 
 function getPM25() {
     $.ajax({
-        url: 'http://opendata.epa.gov.tw/ws/Data/REWXQA/?$orderby=SiteName&$skip=0&$top=1000&format=json',
+        url: 'https://opendata.epa.gov.tw/ws/Data/REWXQA/?$orderby=SiteName&$skip=0&$top=1000&format=json',
         dataType: 'jsonp',
         success: onsuccessPM25
     });
